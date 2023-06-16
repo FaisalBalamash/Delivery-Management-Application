@@ -1,0 +1,17 @@
+create table admin(id integer constraint pkadmin PRIMARY KEY, username varchar2(20), password varchar2(20));
+
+create table delivery(id integer constraint pkdelivery PRIMARY KEY, username varchar2(20), password varchar2(20), phone integer, vehicle varchar2(20));
+
+create table customer(id integer constraint pkcustomer PRIMARY KEY, username varchar2(20), password varchar2(20), phone integer, location varchar2(50));
+
+create table food(id integer constraint pkfood PRIMARY KEY, food_name varchar2(20), stock_quanitity integer, price float);
+
+create table food_order(id integer, stock_quanitity integer, final_price float, food_id integer constraint fkfood references food(id), customer_id integer constraint fkcustomer references customer(id), delivery_id integer constraint fkdelivery references delivery(id));
+
+insert into admin values(1, 'admin', 'admin');
+
+Create sequence auto_increment
+start with 1
+increment by 1
+minvalue 1
+maxvalue 99999;
