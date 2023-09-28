@@ -47,8 +47,7 @@ To get started, follow these steps to clone the repository and compile the Java 
 -   **Change Password:** Update account password for security.
 
 ## Screenshots
-
-Include screenshots of each user screen to showcase the application's user interface and features for Customers, Delivery Men, and Admin.
+![alt text](https://github.com/FaisalBalamash/Delivery-Management-System/blob/main/image.jpg?raw=true)
 
 ## Contributing
 
